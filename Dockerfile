@@ -108,6 +108,8 @@ RUN echo "alias l='ls -CF'" >> $HOME/.bashrc
 RUN echo "alias q='exit'" >> $HOME/.bashrc
 RUN echo "alias c='clear'" >> $HOME/.bashrc
 
+RUN yarn global add @vue/cli
+
 ENV PORT 3000
 
 EXPOSE $PORT
